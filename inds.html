@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNADM MSALI KRO</title>
+
+    
+</head>
+<body>
+    <h1> WA TA NTA MSALI KARK DAKHL LHAD SITE HHHH</h1>
+    <h2> WA MLI MSALI KRK DIR XI 9ALWA FHYATK </h2>
+    <h2> HA DAHK M3AK MT9L9CH A ZBI , B9A TCHOF FHAD LCHRONO BIMA ISALI</h2>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #timer {
+            font-size: 2em;
+            font-weight: bold;
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+    <div id="timer">00:00:00</div>
+
+    <script>
+        let countdownSeconds = 35; // Set countdown time in seconds
+        let redirectURL = "https://www.xnxx.com"; // Set the URL to redirect
+
+        function updateTimer() {
+            if (countdownSeconds < 0) {
+                clearInterval(interval);
+                window.location.href = redirectURL; // Redirect user
+                return;
+            }
+
+            let hours = Math.floor(countdownSeconds / 3600);
+            let minutes = Math.floor((countdownSeconds % 3600) / 60);
+            let seconds = countdownSeconds % 60;
+
+            document.getElementById('timer').textContent =
+                String(hours).padStart(2, '0') + ":" +
+                String(minutes).padStart(2, '0') + ":" +
+                String(seconds).padStart(2, '0');
+
+            countdownSeconds--; // Decrease time
+        }
+
+        updateTimer(); // Initialize timer display
+        let interval = setInterval(updateTimer, 1000); // Update every second
+    </script>
+
+</body>
+</html>
